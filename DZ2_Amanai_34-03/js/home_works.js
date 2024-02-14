@@ -49,6 +49,7 @@ let intervalId;
 let seconds = 0;
 
 function startTimer() {
+    clearInterval(intervalId);
     intervalId = setInterval(() => {
         seconds++;
         secondsDisplay.textContent = seconds;
